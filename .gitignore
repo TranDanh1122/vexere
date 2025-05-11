@@ -41,16 +41,16 @@ Thumbs.db
 *.war
 
 # Large media files
-*.mp4
-*.tiff
-*.avi
-*.flv
-*.mov
-*.wmv
+# *.mp4
+# *.tiff
+# *.avi
+# *.flv
+# *.mov
+# *.wmv
 /node_modules
 /public/hot
-/public/storage
-/public/uploads
+# /public/storage
+# /public/uploads
 /public/wp-content
 /public/assets/default
 /public/assets/ecommerce
@@ -84,7 +84,7 @@ public/robots.txt
 /public/products.txt
 /public/core/img/*.webp
 /public/ads.txt
-/public/thumbnails
+# /public/thumbnails
 
 #lang
 /lang/*/
