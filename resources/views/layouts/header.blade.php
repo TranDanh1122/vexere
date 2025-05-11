@@ -4,14 +4,15 @@
 <header class="header bg-primary-color">
     <nav class="mx-auto flex items-center justify-between p-5 lg:px-8" aria-label="Global">
         <a href="{{ route('app.home.vi') }}" class="-m-1.5 p-1.5">
-            @include('layouts.image', [
+            <!-- @include('layouts.image', [
                 'src' => $themeConfig['logo_header_desktop'] ?? '/vendor/core/core/base/img/default_150x48.png',
                 'alt' => 'logo',
                 'width' => '148',
                 'height' => '40',
                 'lazy' => false,
                 'class' => 'h-8 w-auto',
-            ])
+            ]) -->
+            <img class="object-cover max-h-16 w-auto max-w-[200px]" src={{$themeConfig['logo_header_desktop'] ?? '/vendor/core/core/base/img/default_150x48.png'}}> 
         </a>
         <div class="flex lg:hidden menu-mobile-icon">
             <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

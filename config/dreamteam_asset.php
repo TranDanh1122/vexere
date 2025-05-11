@@ -8,7 +8,7 @@ return [
     'enable_version' => true,
 
     // Version hiển thị khi enable_vesion là true
-    'version' => '0.1.4',
+    'version' => '0.1.5',
 
     // Các thư viện js mặc định được sử dụng, là key được định nghĩa trong phần resource bên dưới.
     'scripts' => [
