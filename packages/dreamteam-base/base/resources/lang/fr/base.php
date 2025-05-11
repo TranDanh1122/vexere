@@ -1,0 +1,57 @@
+<?php
+
+return [
+    'yes' => 'Oui',
+    'no' => 'Non',
+    'is_default' => 'Est par défaut?',
+    'proc_close_disabled_error' => 'La fonction proc_close() est désactivée. Veuillez contacter votre fournisseur d\'hébergement pour l\'activer. Ou vous pouvez ajouter à .env: CAN_EXECUTE_COMMAND=false pour désactiver cette fonctionnalité.',
+    'email_template' => [
+        'header' => 'En-tête du modèle d\'e-mail',
+        'footer' => 'Pied de page du modèle d\'e-mail',
+        'site_title' => 'Titre du site',
+        'site_url' => 'URL du site',
+        'site_logo' => 'Logo du site',
+        'date_time' => 'Date et heure actuelles',
+        'date_year' => 'Année en cours',
+        'site_admin_email' => 'E-mail de l\'administrateur du site',
+        'twig' => [
+            'tag' => [
+                'apply' => 'La balise apply permet d\'appliquer des filtres Twig',
+                'for' => 'Boucle sur chaque élément d\'une séquence',
+                'if' => 'La déclaration if dans Twig est comparable aux déclarations if de PHP',
+            ],
+        ],
+    ],
+    'change_image' => 'Changer l\'image',
+    'delete_image' => 'Supprimer l\'image',
+    'preview_image' => 'Aperçu de l\'image',
+    'image' => 'Image',
+    'using_button' => 'Utiliser le bouton',
+    'select_image' => 'Sélectionner l\'image',
+    'click_here' => 'Cliquez ici',
+    'to_add_more_image' => 'pour ajouter plus d\'images',
+    'add_image' => 'Ajouter une image',
+    'tools' => 'Outils',
+    'close' => 'Fermer',
+    'panel' => [
+        'others' => 'Autres',
+        'system' => 'Système',
+        'manage_description' => 'Gérer :name',
+    ],
+    'global_search' => [
+        'title' => 'Recherche',
+        'search' => 'Recherche',
+        'clear' => 'Effacer',
+        'no_result' => 'Aucun résultat trouvé',
+        'to_select' => 'pour sélectionner',
+        'to_navigate' => 'pour naviguer',
+        'to_close' => 'pour fermer',
+    ],
+    'validation' => [
+        'email_in_blacklist' => 'Le :attribute est sur la liste noire. Veuillez utiliser une autre adresse e-mail.',
+        'domain' => 'Le :attribute doit être un domaine valide.',
+    ],
+    'showing_records' => 'Affichage de :from à :to sur :total enregistrements',
+    '404_title' => 'Page non trouvée - 404 Not Found',
+	'404_description' => 'La page que vous recherchez n\'existe pas. Le lien pourrait être incorrect ou le contenu n\'est plus disponible (404 non trouvé)',
+];

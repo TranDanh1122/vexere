@@ -1,0 +1,65 @@
+@import 'mixin.scss';
+
+.pagination {
+    @include flex(center, center);
+    margin: 1.2rem 0;
+    .paginate_dot, .paginate_item {
+        display: inline-block;
+        color: $color_main;
+        margin-right: 15px;
+        height: 35px;
+        line-height: 35px;
+        width: 30px;
+        text-align: center;
+        background: $color_border;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 14px;
+        &:hover {
+            a, span, .page-link {
+                color: $color_main;
+            }
+        }
+        &.active,
+        &:hover {
+            background: $color_primary;
+            color: #fff;
+        }
+    }
+    a, span, .page-link {
+        color: $color_main;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        transition: 0.2s;
+    }
+    li.active, .active {
+        a, span, .page-link {
+            color: $color_primary;
+        }
+    }
+    li.first,
+    li:last-child {
+        background: none;
+        color: #F2F2F2;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pagination {
+        margin: 20px auto;
+        .paginate_item {
+            display: none !important;
+        }
+        .paginate_item:nth-child(1),
+        .paginate_item:nth-child(2),
+        .paginate_item:nth-child(3),
+        .paginate_item:nth-last-child(1),
+        .paginate_item:nth-last-child(2),
+        .paginate_item:nth-last-child(3),
+        .paginate_item.disabled,
+        .paginate_item.active {
+            display: inline-block !important;
+        }
+    }
+}

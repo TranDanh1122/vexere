@@ -1,0 +1,1 @@
+<td style="width: {!! $width ?? 'auto' !!};">@if(isset($text) && !empty($text)) {{$text??''}} @endif</td>

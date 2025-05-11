@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "Base",
+    "namespace": "DreamTeam\\Base\\",
+    "provider": "DreamTeam\\Base\\Providers\\BaseServiceProvider",
+    "author": "DreamTeam Technologies",
+    "url": "https://dreamteam.com",
+    "version": "0.1.7",
+    "description": "Core base package for DreamTeam CMS",
+    "marketplaceUrl": "https://dreamteam.com/api/v1/plugins/",
+    "marketplaceToken": "gjGW4ubGEw9EgEhxovZuP5kyhO64J1icdDyTOxEGpDmQMIavAK8zgl8FRj7d"
+}

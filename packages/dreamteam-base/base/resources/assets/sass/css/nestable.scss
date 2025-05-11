@@ -1,0 +1,245 @@
+.nestable {
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+}
+.nestable-action {
+	width: 100%;
+	float: left;
+	border: 1px solid #cccccc;
+	padding: 10px 10px 10px 15px;
+}
+.nestable-action__text {
+	line-height: 30px;
+	float: left;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.nestable-action__group {
+	float: right;
+}
+.nestable-action__btn {
+	width: 30px;
+	height: 30px;
+	margin: 0 0 0 5px;
+	padding: 0;
+	border: none;
+	float: left;
+	opacity: 0.9;
+}
+.nestable-action__btn i {
+	font-size: 15px;
+	line-height: 24px;
+	text-align: center;
+}
+.nestable-action__btn.plus {
+	background: #007bff;
+	color: #ffffff;
+}
+.nestable-action__btn.minus {
+	background: #ff0000;
+	color: #ffffff;
+}
+
+.dd {
+	width: 100%;
+	float: left;
+	position: relative;
+    display: block;
+    padding:  15px 15px;
+    list-style: none; 
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+
+.dd-list {
+	display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dd-list .dd-list {
+	padding-left: 40px;
+}
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+	display: block;
+    position: relative;
+	margin: 10px 0;
+}
+/* Danh sách có con */
+.dd-handle {
+	display: block;
+	height: 40px;
+	background: #dddddd;
+	cursor: move;
+	color: #333;
+	text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+.dd-handle:hover {
+    color: #333;
+    background: #cabdbd;
+    transition: 0.2s;
+}
+
+/* Nút + - khi có con */
+.dd-item > button { 
+	display: block;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border: 0;
+	background: #007bff;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+}
+.dd-item > button:before { 
+	content: '+';
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	text-indent: 0;
+}
+.dd-item > button[data-action="collapse"]:before { 
+	content: '-';
+}
+/* Kéo thả */
+.dd-placeholder,
+.dd-empty {
+    padding: 0;
+    min-height: 40px;
+    background: #f2fbff;
+    border: 1px dashed #b6bcbf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dd-empty { 
+	border: 1px dashed #bbb; min-height: 100px; background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+                      -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image:    -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+                         -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image:         linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+                              linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-size: 60px 60px;
+    background-position: 0 0, 40px 40px;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dd-dragel > .dd-item .dd-handle {
+    margin-top: 0;
+}
+
+.dd-dragel .dd-handle {
+    -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+}
+/* style ngoài */
+.dd-title {
+	display: inline-block;
+	line-height: 40px;
+	padding: 0 10px;
+}
+.dd-action {
+	display: inline;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	float: left;
+	z-index: 10;
+}
+.dd-action .remove,
+.dd-action .plus {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: none;
+	font-size: 10px;
+	float: right;
+}
+.dd-action .remove {
+	background: #ff0000;
+	color: #ffffff;
+}
+.dd-action .plus {
+	background: #007bff;
+	color: #ffffff;
+}
+.dd-collape {
+	display: none;
+	border: 1px solid #cccccc;
+	padding: 10px;
+	background: #ffffff;
+}
+
+.card-menu__header {
+    position: relative;
+    &:after {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid;
+        border-width: 0 2px 2px 0;
+        border-color: #ccc;
+        transform: rotate(-135deg);
+        transition: .5s;
+    }
+    &.active:after {
+        transform: rotate(45deg);
+    }
+}
+.sussget-menu_parent {
+	position: relative;
+	.loading-suggest {
+		position: absolute;
+		right: 6px;
+		top: 37px;
+		display: none;
+	}
+	&.active {
+		.loading-suggest {
+			display: block;
+		}
+	}
+	.edit-link {
+		// border-radius: .25rem;
+		// font-size: .8125rem;
+		// font-weight: 400;
+		// line-height: 1.5;
+		// color: #495057;
+		// background-color: #fff;
+		// background-clip: padding-box;
+		// border: 1px solid #ced4da;
+		// width: 100%;
+		// padding: .47rem .75rem
+		span i {
+			cursor: pointer;
+			color: #007bff;
+		}
+	}
+}

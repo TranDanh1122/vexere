@@ -1,0 +1,132 @@
+@import 'mixin.scss';
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-center {
+    @include flex(center, center);
+}
+.flex-center-left {
+    @include flex(center, flex-start);
+}
+.flex-center-between {
+    @include flex(center, space-between);
+}
+.flex-center-around {
+    @include flex(center, space-around);
+}
+.flex-center-right {
+    @include flex(center, flex-end);
+}
+.flex-left-center {
+    @include flex(flex-start, center);
+}
+.flex-left {
+    @include flex(flex-start, flex-start);
+}
+.flex-left-between {
+    @include flex(flex-start, space-between);
+}
+.flex-right-center {
+    @include flex(flex-end, center);
+}
+.flex-inline-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-inline-center-left {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-inline-center-right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex-inline-center-between {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+.f-w-b {
+    font-weight: bold;
+}
+.f-italic {
+    font-style: italic;
+}
+
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+.text-up {
+    text-transform: uppercase;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.lh-22 {
+    line-height: 22px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pd-35 {
+    padding: 3.5rem 0;
+}
+.pt-0 {
+    padding-top: 0 !important;
+}

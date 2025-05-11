@@ -1,0 +1,27 @@
+{
+    "name": "dreamteam/translates",
+    "description": "Translates Dream Team package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "duyvn.k56@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DreamTeam\\Translate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DreamTeam\\Translate\\Providers\\TranslateServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

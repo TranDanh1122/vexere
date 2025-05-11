@@ -1,0 +1,17 @@
+.hidden-tab {
+    visibility: hidden;
+    height: 0;
+    display: block !important;
+}
+
+.edit-email-wrapper {
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 6px;
+    background: #556ee6;
+}
+
+.edit-email-wrapper:hover {
+    opacity: 0.8;
+}

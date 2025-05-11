@@ -1,0 +1,32 @@
+<?php
+return [
+    'name' => 'Lien de synchronisation',
+    'export_name' => 'Exporter des données',
+    '301'	=> "301 (permanent)",
+	'302' 	=>	"302 (Temporaire)",
+    'create'    => 'Ajouter un lien de redirection',
+    'desc'		=> 'Veuillez prendre note et être sûr de vos modifications, cela peut affecter le classement de vos mots-clés',
+    'source_link' => 'Lien source',
+	'target_link' => 'Lien de destination',
+    'list' 		=> 'Liste des liens de redirection',
+    'code'      => 'Code',
+	'list_desc' => 'Vous pouvez personnaliser les paramètres, les codes d\'état de redirection pour répondre à vos besoins. Cela peut prendre jusqu\'à 15 minutes ou 24 heures pour être utilisable en raison du cache du navigateur. Veuillez patienter',
+    'add_sync' => 'Créer une redirection 301 pour <span>:link</span> vers',
+    'error_position' => 'Vérifiez où ce lien est utilisé avec ce chemin <a href=":link" target="_blank">ici</a>',
+    'import' => [
+        'name' => 'Importer des données',
+        'old_link' => 'Ancien lien',
+        'new_link' => 'Nouveau lien',
+        'code' => 'Navigation',
+        'file' => 'Utilisez un fichier Excel (xlsx, xls) pour importer des données de lien de synchronisation',
+        'col1' => 'Colonne 1 (Colonne A) : Entrez l`ancien lien" : "Colonne 1 (Colonne A)',
+        'col2' => 'Colonne 2 (Colonne B) : Entrez le nouveau lien" : "Colonne 2 (Colonne B)',
+        'col3' => 'Colonne 3 (Colonne C) : Entrez la navigation (301 | 302) (Laissez vide pour la valeur par défaut 301)',
+        'close' => 'Fermer',
+        'import_name' => 'Importer des données',
+        'file_require' => 'Veuillez sélectionner un fichier.',
+        'file_specifix' => 'Format de fichier incorrect, seuls les fichiers avec les extensions xlsx et xls sont acceptés.',
+        'download' => 'Télécharger le fichier modèle',
+    ],
+    'link' => 'Lien de redirection'
+];

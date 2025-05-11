@@ -1,0 +1,32 @@
+<?php
+return [
+    'name' => 'Synchronization Link',
+    'export_name' => 'Export data',
+    '301'	=> "301 (permanent)",
+	'302' 	=>	"302 (Temporary)",
+    'create'    => 'Add sync link',
+    'desc'		=> 'Please be aware of your change and be sure, this may affect your keyword rankings',
+    'source_link' => 'Source link',
+	'target_link' => 'Destination link',
+    'list' 		=> 'List sync link',
+    'code'  => 'Code',
+	'list_desc' => 'You can customize parameters, link forward status codes to suit your purposes. It may take up to 15 minutes or 24 hours to be usable due to the browser cache. Please wait',
+    'add_sync' => 'Create a 301 redirect for <span>:link</span> to',
+    'error_position' => 'Check where this path is being used <a href=":link" target="_blank">here</a>',
+    'import' => [
+        'name' => 'Import Data',
+        'old_link' => 'Old Link',
+        'new_link' => 'New Link',
+        'code' => 'Navigation',
+        'file' => 'Use Excel file (xlsx, xls) to Import Synchronization Link Data',
+        'col1' => 'Column 1 (Column A): Enter old link": "Col 1 (Col A)',
+        'col2' => 'Column 2 (Column B): Enter new link": "Col 2 (Col B)',
+        'col3' => 'Column 3 (Column C): Enter navigation (301 | 302) (Leave blank for default 301)',
+        'close' => 'Close',
+        'import_name' => 'Import Data',
+        'file_require' => 'Please select a File.',
+        'file_specifix' => 'Incorrect file format, only accept files with extensions xlsx and xls.',
+        'download' => 'Download template file',
+    ],
+    'link' => 'Link Redirect'
+];

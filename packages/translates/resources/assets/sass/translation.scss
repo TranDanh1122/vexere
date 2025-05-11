@@ -1,0 +1,56 @@
+.box-translation {
+    a.status-1 {
+        font-weight: bold;
+    }
+
+    &.empty-translation {
+        margin-bottom: 0;
+    }
+}
+
+.editable-input {
+    .form-control {
+        height: 34px;
+    }
+}
+
+.input-large {
+    width: 320px !important;
+}
+.editable-container.editable-inline {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    /* inline-block emulation for IE7*/
+    zoom: 1;
+    *display: inline;
+}
+.editableform {
+    margin-bottom: 0;
+}
+.editableform .control-group {
+    margin-bottom: 0;
+    white-space: nowrap;
+    line-height: 20px;
+}
+.editable-input {
+    vertical-align: top;
+    display: inline-block;
+    width: auto;
+    white-space: normal;
+    zoom: 1;
+    *display: inline;
+}
+.editable-input .form-control {
+    height: 34px;
+}
+.editable-buttons {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+    zoom: 1;
+    *display: inline;
+}
+.mdi-alert-outline {
+    font-size: 30px;
+}

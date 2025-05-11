@@ -1,0 +1,27 @@
+{
+    "name": "dreamteam/sync-links",
+    "description": "Sync Link Dream Team package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "duyvn.k56@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DreamTeam\\SyncLink\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DreamTeam\\SyncLink\\Providers\\SyncLinkServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

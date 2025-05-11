@@ -1,0 +1,57 @@
+<?php
+
+return [
+    'yes' => 'Ja',
+    'no' => 'Nein',
+    'is_default' => 'Ist Standard?',
+    'proc_close_disabled_error' => 'Funktion proc_close() ist deaktiviert. Bitte kontaktieren Sie Ihren Hosting-Anbieter, um sie zu aktivieren. Oder Sie können zu .env hinzufügen: CAN_EXECUTE_COMMAND=false, um diese Funktion zu deaktivieren.',
+    'email_template' => [
+        'header' => 'E-Mail-Vorlagen-Kopfzeile',
+        'footer' => 'E-Mail-Vorlagen-Fußzeile',
+        'site_title' => 'Seitentitel',
+        'site_url' => 'Seiten-URL',
+        'site_logo' => 'Seitenlogo',
+        'date_time' => 'Aktuelles Datum und Uhrzeit',
+        'date_year' => 'Aktuelles Jahr',
+        'site_admin_email' => 'E-Mail des Site-Administrators',
+        'twig' => [
+            'tag' => [
+                'apply' => 'Das apply-Tag ermöglicht es Ihnen, Twig-Filter anzuwenden',
+                'for' => 'Schleife über jedes Element in einer Sequenz',
+                'if' => 'Die if-Anweisung in Twig ist vergleichbar mit den if-Anweisungen von PHP',
+            ],
+        ],
+    ],
+    'change_image' => 'Bild ändern',
+    'delete_image' => 'Bild löschen',
+    'preview_image' => 'Bildvorschau',
+    'image' => 'Bild',
+    'using_button' => 'Schaltfläche verwenden',
+    'select_image' => 'Bild auswählen',
+    'click_here' => 'Klicken Sie hier',
+    'to_add_more_image' => 'um weitere Bilder hinzuzufügen',
+    'add_image' => 'Bild hinzufügen',
+    'tools' => 'Werkzeuge',
+    'close' => 'Schließen',
+    'panel' => [
+        'others' => 'Andere',
+        'system' => 'System',
+        'manage_description' => 'Verwalten :name',
+    ],
+    'global_search' => [
+        'title' => 'Suche',
+        'search' => 'Suchen',
+        'clear' => 'Löschen',
+        'no_result' => 'Kein Ergebnis gefunden',
+        'to_select' => 'auswählen',
+        'to_navigate' => 'navigieren',
+        'to_close' => 'schließen',
+    ],
+    'validation' => [
+        'email_in_blacklist' => 'Das :attribute steht auf der schwarzen Liste. Bitte verwenden Sie eine andere E-Mail-Adresse.',
+        'domain' => 'Das :attribute muss eine gültige Domain sein.',
+    ],
+    'showing_records' => 'Zeige :from bis :to von :total Einträgen',
+    '404_title' => 'Seite nicht gefunden - 404 Not Found',
+	'404_description' => 'Die Seite, die Sie suchen, existiert nicht. Der Link könnte falsch sein oder der Inhalt ist nicht mehr verfügbar (404 nicht gefunden)',
+];

@@ -1,0 +1,56 @@
+@import "variables/variables";
+@import "mixins/mixins";
+@import "components/components";
+@import "layouts/layouts";
+@import "integrate";
+@import "cropper";
+
+.rv-media-wrapper {
+	border: 1px solid #d5d0d0;
+}
+input.hidden {
+	display: none !important;
+}
+.form-colorinput-input {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+.form-colorinput-color {
+	border: 1px solid rgba(4, 32, 69, 0.1);
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	color: #fff;
+	display: block;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.form-colorinput-input:checked ~ .form-colorinput-color::before {
+	opacity: 1;
+}
+.form-colorinput-light .form-colorinput-color::before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='none' stroke='%23182433' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8.5 6.5 11 12 5.5'/%3E%3C/svg%3E");
+}
+.form-colorinput-color::before {
+	background: no-repeat 50%/1.25rem;
+	background-image: none;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8.5 6.5 11 12 5.5'/%3E%3C/svg%3E");
+	content: "";
+	height: 24px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: opacity 0.3s;
+	width: 100%;
+}
+.rv-media-name span {
+    display: block;
+}
+#rv_media_modal > .modal-dialog {max-width: 90%;}
+#rv_media_modal .modal-blur .modal-dialog{
+	max-width: 540px;
+}
+#rv_media_modal #modal_crop_image .modal-dialog {
+	max-width: 800px;
+}

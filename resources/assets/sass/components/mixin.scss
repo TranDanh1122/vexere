@@ -1,0 +1,92 @@
+
+$font-family: 'roboto', sans-serif;
+$body-font-size: 1rem;
+$black-color: #000;
+$white-color: #fff;
+$primary-color: rgb(36, 116, 229);
+
+/* dùng cho một vài thuộc tính riêng cho trình duyện VD: transition, box-shadow */
+@mixin css3($atribute, $params) {
+	#{$atribute}: #{$params};
+	-webkit-#{$atribute}: #{$params};
+	-khtml-#{$atribute}: #{$params};
+	-moz-#{$atribute}: #{$params};
+	-ms-#{$atribute}: #{$params};
+	-o-#{$atribute}: #{$params};
+}
+/* căn giữa chiều dọc và ngang trên 1 box */
+@mixin center_element($height) {
+	display: grid;
+    place-items: center;
+    height: #{$height};
+}
+/* background opacity */
+@mixin bg-opacity($color, $opacity) {
+	position: relative;
+	&:before {
+		content: "";
+		top: 0; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #{$color};
+		opacity: #{$opacity};
+		position: absolute;
+	}
+}
+@mixin flex($align, $justify) {
+    display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
+@mixin webkit-box($number) {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number;
+    overflow: hidden;
+}
+
+// 3. Breakpoints
+$breakpoints: (se: 375px, xs: 480px, sm: 576px, md: 768px, lg: 992px, xm: 1024px, xl: 1200px, xxl: 1600px, xlst: 1920px);
+$max-breakpoints: (se: 374px, xs: 479px, sm: 575px, md: 767px, lg: 991px, xl: 1199px, xxl: 1599px);
+
+// Use @include mq(lg, 'max') for max-width or @include mq(lg)
+
+@mixin mq($mq-breakpoint, $mq-width: 'min-width', $mq-breakpoints: $breakpoints) {
+    @if $mq-width == 'max' {
+        $mq-width: 'max-width';
+        $mq-breakpoints: $max-breakpoints;
+    }
+
+    // If $mq-breakpoint is a key that exists in this
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+        $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+    }
+
+    @media (#{$mq-width}: #{$mq-breakpoint}) {
+        @content;
+    }
+}
+
+@mixin scroll_bar {
+	$scrollbar_color: $black-color !default;
+	$scrollbar_bg: #ccc !default;
+	scrollbar-color: $scrollbar_color $scrollbar_bg;
+	scrollbar-width: thin;
+
+	scrollbar-face-color: $scrollbar_color;
+	scrollbar-track-color: $scrollbar_bg;
+	&::-webkit-scrollbar {
+	    width: 5px;
+	    height: 5px;
+	}
+	&::-webkit-scrollbar-track {
+	    background: $scrollbar_bg; 
+	}
+	&::-webkit-scrollbar-thumb {
+	    background: $scrollbar_color;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+	    background: #68767b; 
+	}
+}

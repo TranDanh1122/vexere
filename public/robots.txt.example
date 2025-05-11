@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /tim-kiem
+Sitemap: https://domain/sitemap.xml

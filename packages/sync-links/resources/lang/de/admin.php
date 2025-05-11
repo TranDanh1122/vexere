@@ -1,0 +1,32 @@
+<?php
+return [
+    'name' => 'Synchronisierungslink',
+    'export_name' => 'Daten exportieren',
+    '301'	=> "301 (permanent)",
+	'302' 	=>	"302 (Temporär)",
+    'create'    => 'Sync-Link hinzufügen',
+    'desc'		=> 'Bitte beachten Sie und seien Sie sich Ihrer Änderung bewusst, da sich dies auf das Keyword-Ranking auswirken kann',
+    'source_link' => 'Quelllink',
+	'target_link' => 'Ziellink',
+    'code'         => 'Code',
+    'list' 		=> 'Sync-Link hinzufügen',
+	'list_desc' => 'Sie können Parameter anpassen, Weiterleitungsstatuscodes gemäß Ihren Anforderungen festlegen. Die Verwendung kann aufgrund des Browser-Caches bis zu 15 Minuten oder 24 Stunden dauern. Bitte warten Sie',
+    'add_sync' => '301-Weiterleitung für <span>:link</span> erstellen zu',
+    'error_position' => 'Überprüfen Sie, wo dieser Link diese URL bereits verwendet <a href=":link" target="_blank">hier</a>',
+    'import' => [
+        'name' => 'Daten importieren',
+        'old_link' => 'Alter Link',
+        'new_link' => 'Neuer Link',
+        'code' => 'Navigation',
+        'file' => 'Verwenden Sie eine Excel-Datei (xlsx, xls), um Synchronisierungslink-Daten zu importieren',
+        'col1' => 'Spalte 1 (Spalte A): Geben Sie den alten Link ein": "Spalte 1 (Spalte A)',
+        'col2' => 'Spalte 2 (Spalte B): Geben Sie den neuen Link ein": "Spalte 2 (Spalte B)',
+        'col3' => 'Spalte 3 (Spalte C): Geben Sie die Navigation ein (301 | 302) (Leer lassen für Standard 301)',
+        'close' => 'Schließen',
+        'import_name' => 'Daten importieren',
+        'file_require' => 'Bitte wählen Sie eine Datei aus.',
+        'file_specifix' => 'Falsches Dateiformat, es werden nur Dateien mit den Erweiterungen xlsx und xls akzeptiert.',
+        'download' => 'Vorlagen-Datei herunterladen',
+    ],
+    'link' => 'Link Weiterleitung'
+];

@@ -1,0 +1,54 @@
+{
+    "name": "dreamteam/core",
+    "description": "Base Dream Team package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "vanduy.nguyen0897@gmail.com"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "intervention/image": "^3.4",
+        "aws/aws-sdk-php": "^3.133",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "laravel/helpers": "^1.2",
+        "dreamteam/assets": "*@dev",
+        "illuminate/contracts": ">=5.5",
+        "illuminate/database": ">=5.5",
+        "illuminate/queue": ">=5.5",
+        "illuminate/support": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DreamTeam\\Base\\": "base/src/",
+            "DreamTeam\\Table\\": "table/src/",
+            "DreamTeam\\Form\\": "form/src/",
+            "DreamTeam\\Category\\": "categories/src/",
+            "DreamTeam\\Media\\": "media/src/",
+            "DreamTeam\\JobStatus\\": "job-status/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DreamTeam\\Base\\Providers\\BaseServiceProvider",
+                "DreamTeam\\Table\\Providers\\TableServiceProvider",
+                "DreamTeam\\Form\\Providers\\FormServiceProvider",
+                "DreamTeam\\Category\\Providers\\CategoryServiceProvider",
+                "DreamTeam\\Media\\Providers\\MediaServiceProvider",
+                "DreamTeam\\Base\\Providers\\CustomMailServiceProvider",
+                "DreamTeam\\JobStatus\\Providers\\JobStatusBusServiceProvider",
+                "DreamTeam\\JobStatus\\Providers\\JobStatusServiceProvider"
+            ],
+            "aliases": {
+                "ListData": "DreamTeam\\Table\\MyClass\\ListData",
+                "Form": "DreamTeam\\Form\\MyClass\\FormBuilder",
+                "ListCategory": "DreamTeam\\Category\\MyClass\\ListCategory"
+            }
+        }
+    }
+}

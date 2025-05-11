@@ -1,0 +1,58 @@
+<?php
+
+return [
+    'yes' => 'Có',
+    'no' => 'Không',
+    'is_default' => 'Là mặc định?',
+    'proc_close_disabled_error' => 'Chức năng proc_close() bị vô hiệu hóa. Vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ để kích hoạt nó. Hoặc bạn có thể thêm vào .env: CAN_EXECUTE_COMMAND=false để vô hiệu hóa tính năng này.',
+    'email_template' => [
+        'header' => 'Tiêu đề mẫu email',
+        'footer' => 'Chân trang mẫu email',
+        'site_title' => 'Tiêu đề trang',
+        'site_url' => 'URL trang',
+        'site_logo' => 'Logo trang',
+        'date_time' => 'Ngày giờ hiện tại',
+        'date_year' => 'Năm hiện tại',
+        'site_admin_email' => 'Email quản trị trang',
+        'twig' => [
+            'tag' => [
+                'apply' => 'Thẻ apply cho phép bạn áp dụng các bộ lọc Twig',
+                'for' => 'Lặp qua từng mục trong một chuỗi',
+                'if' => 'Câu lệnh if trong Twig tương tự với câu lệnh if của PHP',
+            ],
+        ],
+    ],
+    'change_image' => 'Thay đổi hình ảnh',
+    'delete_image' => 'Xóa hình ảnh',
+    'preview_image' => 'Xem trước hình ảnh',
+    'image' => 'Hình ảnh',
+    'using_button' => 'Sử dụng nút',
+    'select_image' => 'Chọn hình ảnh',
+    'click_here' => 'Nhấp vào đây',
+    'to_add_more_image' => 'để thêm hình ảnh',
+    'to_add_more_file' => 'để thêm tệp',
+    'add_image' => 'Thêm hình ảnh',
+    'tools' => 'Công cụ',
+    'close' => 'Đóng',
+    'panel' => [
+        'others' => 'Khác',
+        'system' => 'Hệ thống',
+        'manage_description' => 'Quản lý :name',
+    ],
+    'global_search' => [
+        'title' => 'Tìm kiếm',
+        'search' => 'Tìm kiếm',
+        'clear' => 'Xóa',
+        'no_result' => 'Không có kết quả',
+        'to_select' => 'để chọn',
+        'to_navigate' => 'để điều hướng',
+        'to_close' => 'để đóng',
+    ],
+    'validation' => [
+        'email_in_blacklist' => 'Thuộc tính :attribute nằm trong danh sách đen. Vui lòng sử dụng địa chỉ email khác.',
+        'domain' => 'Thuộc tính :attribute phải là một tên miền hợp lệ.',
+    ],
+    'showing_records' => 'Hiển thị :from đến :to của :total bản ghi',
+    '404_title' => 'Trang không tôn tại - 404 Not Found',
+    '404_description' => 'Trang bạn đang xem không tồn tại, có thể đường dẫn bị sai hoặc nội dung không còn khả dụng (404 not found)',
+];

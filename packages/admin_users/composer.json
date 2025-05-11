@@ -1,0 +1,29 @@
+{
+    "name": "dreamteam/admin-users",
+    "description": "Admin User Dream Team package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "duyvn.k56@gmail.com"
+        }
+    ],
+    "require": {
+        "pragmarx/google2fa-laravel": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "DreamTeam\\AdminUser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DreamTeam\\AdminUser\\Providers\\AdminUserServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

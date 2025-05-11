@@ -1,0 +1,29 @@
+{
+    "name": "dreamteam/assets",
+    "description": "Asset Dream Team package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "duyvn.k56@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DreamTeam\\Asset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DreamTeam\\Asset\\Providers\\AssetServiceProvider"
+            ],
+            "aliases": {
+                "Asset": "DreamTeam\\Asset\\Facades\\AssetFacade"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import './mixin.scss';
+.breadcrumb {
+    padding-top: 30px;
+    ul {
+        display: inline;
+        li {
+            position: relative;
+            margin-right: 20px;
+            display: inline;
+            &:before {
+                position: absolute;
+                content: "";
+                left: -16px;
+                top: 4px;
+                width: 6px;
+                height: 6px;
+                border: solid $black-color;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(-45deg);
+                   -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                     -o-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+
+            }
+            a {
+                transition: 0.3s;
+                color: $black-color;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            span {
+                color: $black-color;
+            }
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+                span {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

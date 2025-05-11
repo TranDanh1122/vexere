@@ -1,0 +1,1 @@
+<iframe src="{{ route('admin.sync_links.index') }}" frameborder="0" style="width: 100%;height: calc(100vh - 300px);"></iframe>

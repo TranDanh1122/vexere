@@ -1,0 +1,32 @@
+<?php
+return [
+	'name' => 'Link đồng bộ',
+	'export_name' => 'Xuất dữ liệu',
+	'301'	=> "301 (vĩnh viễn)",
+	'302' 	=>	"302 (Tạm thời)",
+	'create'	=> 'Thêm mới link chuyển tiếp',
+	'desc'		=> 'Xin lưu ý và chắc chắn về sự thay đổi của bạn, điều này có thể ảnh hưởng tới thứ hạng từ khóa',
+	'source_link' => 'Liên kết nguồn',
+	'target_link' => 'Liên kết đích',
+	'code'         => 'Mã',
+	'list' 		=> 'Danh sách link chuyển tiếp',
+	'list_desc' => 'Bạn có thể tùy chỉnh thông số, mã trạng thái link chuyển tiếp phù hợp với mục đích của bạn. Có thể mất đến 15 phút hoặc 24h để có thể sử dụng do cache của trình duyệt. Xin vui lòng đợi',
+	'add_sync' => 'Tạo chuyển hướng 301 cho <span>:link</span> tới',
+	'error_position' => 'Xem liên kết đã dùng đường dẫn này <a href=":link" target="_blank">tại đây</a>',
+	'import' => [
+		'name' => 'Nhập dữ liệu',
+		'old_link' => 'Link cũ',
+		'new_link' => 'Link mới',
+		'code' => 'Điều hướng',
+		'file' => 'Sử dụng file Excel (xlsx, xls) để Import dữ liệu Link đồng bộ',
+		'col1' => 'Cột 1 (Cột A): Điền link cũ": "Col 1 (Col A)',
+		'col2' => 'Cột 2 (Cột B): Điền link mới": "Col 2 (Col B)',
+		'col3' => 'Cột 3 (Cột C): Điền điều hướng (301 | 302) (Không nhập mặc định là 301)',
+		'close' => 'Đóng',
+		'import_name' => 'Nhập dữ liệu',
+		'file_require' => 'Vui lòng chọn File.',
+		'file_specifix' => 'Định dạng file không chính xác, chỉ chấp nhận file có đuổi xlsx và xls.',
+		'download' => 'Tải file mẫu',
+	],
+	'link' => 'Link Redirect'
+];

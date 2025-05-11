@@ -1,0 +1,9 @@
+[program:dreamteam.dev-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/customers/dreamteam.dev/artisan queue:work --sleep=2 --tries=2 --timeout=120
+autostart=true
+autorestart=true
+user=nginx
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/customers/dreamteam.dev/worker.log
